@@ -49,6 +49,7 @@
 .post5,
 .post7 {
   color: var(--white);
+  background-color: var(--black);
 }
 
 .post2,
@@ -134,177 +135,84 @@
   }
 }
 
-.post1 {
+.post{
   container-type: inline-size;
-  container-name: box;
 
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/ipad_pro.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 600px) {
-    .card {
-      background: url(./../products/ipad_pro_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/ipad_pro_wide.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1200px) {
-    .card {
-      background: url(./../products/ipad_pro_wide_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
+  .card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
-.post2 {
-  container-type: inline-size;
-  container-name: box;
-
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/ipad_air.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 600px) {
-    .card {
-      background: url(./../products/ipad_air_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/ipad_air_wide.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1200px) {
-    .card {
-      background: url(./../products/ipad_air_wide_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
+.post1 .card{
+  background-image: image-set(
+    url(./../products/ipad_pro.jpeg) 1x,
+    url(./../products/ipad_pro_2x.jpeg) 2x
+    )
 }
 
-.post3 {
-  container-type: inline-size;
-  container-name: box;
-
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/iphone15_pro.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 600px) {
-    .card {
-      background: url(./../products/iphone15_pro_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/iphone15_pro_wide.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1200px) {
-    .card {
-      background: url(./../products/iphone15_pro_wide_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
+.post2 .card{
+  background-image: image-set(
+    url(./../products/ipad_air.jpeg) 1x,
+    url(./../products/ipad_air_2x.jpeg) 2x
+    )
 }
 
-.post4 {
-  container-type: inline-size;
-  container-name: box;
-
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/iphone15.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/iphone15_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
+.post3 .card{
+  background-image: image-set(
+    url(./../products/iphone15_pro.jpeg) 1x,
+    url(./../products/iphone15_pro_2x.jpeg) 2x
+    )
 }
 
-.post5 {
-  container-type: inline-size;
-  container-name: box;
-
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/apple_watch.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/apple_watch_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
+.post4 .card{
+  background-image: image-set(
+    url(./../products/iphone15.jpeg) 1x,
+    url(./../products/iphone15_2x.jpeg) 2x
+    )
 }
 
-.post6 {
-  container-type: inline-size;
-  container-name: box;
-
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/macbook_air.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/macbook_air_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
-  }
+.post5 .card{
+  background-image: image-set(
+    url(./../products/apple_watch.jpeg) 1x,
+    url(./../products/apple_watch_2x.jpeg) 2x
+    )
 }
 
-.post7 {
-  container-type: inline-size;
-  container-name: box;
+.post6 .card{
+  background-image: image-set(
+    url(./../products/macbook_air.jpeg) 1x,
+    url(./../products/macbook_air_2x.jpeg) 2x
+    )
+}
 
-  @container box (min-width: 320px) {
-    .card {
-      background: url(./../products/airpods_pro.jpeg) no-repeat center center;
-      background-size: cover;
-    }
+.post7 .card{
+  background-image: image-set(
+    url(./../products/airpods_pro.jpeg) 1x,
+    url(./../products/airpods_pro_2x.jpeg) 2x
+    )
+}
+
+@container(min-width: 1024px){
+  .post1 .card{
+    background-image: image-set(
+      url(./../products/ipad_pro_wide.jpeg) 1x,
+      url(./../products/ipad_pro_wide_2x.jpeg) 2x
+      )
   }
 
-  @container box (min-width: 1024px) {
-    .card {
-      background: url(./../products/airpods_pro_2x.jpeg) no-repeat center center;
-      background-size: cover;
-    }
+  .post2 .card{
+    background-image: image-set(
+      url(./../products/ipad_air_wide.jpeg) 1x,
+      url(./../products/ipad_air_wide_2x.jpeg) 2x
+      )
+  } 
+  
+  .post3 .card{
+    background-image: image-set(
+      url(./../products/iphone15_pro_wide.jpeg) 1x,
+      url(./../products/iphone15_pro_wide_2x.jpeg) 2x
+      )
   }
 }
