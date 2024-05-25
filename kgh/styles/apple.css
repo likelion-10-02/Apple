@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: var(--size);
+  height: var(--base-size);
   padding-top: var(--large-spacing);
   display: flex;
   flex-flow: column nowrap;
@@ -45,7 +45,6 @@
   }
 
   &.prv-product {
-
     .release-date {
       display: none;
     }
@@ -55,8 +54,9 @@
 /* 테마별 색상 */
 .dark {
   color: var(--white);
+  background-color: var(--black);
 
-  .more-info{
+  .more-info {
     background-color: var(--blue-100);
     border: 1px solid var(--blue-100);
   }
@@ -69,8 +69,9 @@
 
 .light {
   color: var(--black);
+  background-color: var(--white);
 
-  .more-info{
+  .more-info {
     background-color: var(--black);
     border: 1px solid var(--black);
     color: var(--white);
@@ -140,24 +141,28 @@
 /* 카드 레이아웃 - 데스크톱 환경 */
 @media (min-width: 1024px) {
   .card-container {
-
-    .card:nth-child(n+4) {
+    .card:nth-child(n + 4) {
       grid-column: span 1;
     }
   }
 
   .card {
     padding-top: var(--extra-large-spacing);
-  
+    height: var(--large-size);
+
     .product-name {
       font-size: var(--extra-large-text);
     }
-  
+
     .product-info {
       font-size: var(--medium-text);
+
+      br {
+        display: none;
+      }
     }
-  
-    .info-link-group a{
+
+    .info-link-group a {
       font-size: var(--x-small-text);
     }
   }
